@@ -7,7 +7,7 @@ body {
   margin: 65px auto 0;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +17,8 @@ ul {
   display: flex;
   list-style: none; /*Serve para tirar as bolinhas que faz*/
   gap: 48px; /* o espaço entre as opçoes*/
+  margin: 0;
+  padding: 0; /*preenchimento*/
 }
 
 main {
