@@ -1,13 +1,24 @@
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
+  background: linear-gradient(
+    180deg,
+    /*Qual a rotação de inicio desse gradiente*/ rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+      /*A % é o tanto do elemento que quer que apareça*/
+  ); /*Degrade de verde que tem na pagina*/
+
+  min-height: 100vh; /*100% do view port height*/
 }
 
 .page {
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto 0;
+  padding-top: 65px;
 }
 
 nav {
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,4 +34,87 @@ ul {
 
 main {
   display: flex;
+  align-items: center; /*Para alinhar e deixar tudo na mesma linha*/
+  justify-content: space-between;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+
+  color: white;
+  background: #69b99d;
+
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  border-radius: 4px; /*Para arredondar o botão*/
+  cursor: pointer; /*Muda da setinha para a maozinha*/
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 56px;
+  font-weight: normal;
+  color: #1f1534;
+  font-size: 49px;
+  font-weight: normal;
+  width: 490px;
+}
+
+span {
+  color: #89c5cc;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 80px;
+}
+
+p {
+  font-weight: 438px;
+  color: #7d7987;
+  margin: 40px 0;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+ul li a:hover {
+  /*Quando passa por cima do botão*/
+  font-weight: bold;
+  opacity: 1;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1f1534;
+  opacity: 0.5;
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1f1534;
+}
+
+button:hover {
+  background: #4ea788;
 }
